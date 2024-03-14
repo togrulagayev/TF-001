@@ -9,16 +9,18 @@ class GridViewBuilderExample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView.builder(
-      itemCount: imageList.length,
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        crossAxisSpacing: 20,
-        mainAxisSpacing: 20,
+    return Scaffold(
+      body: GridView.builder(
+        itemCount: imageList.length,
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          crossAxisSpacing: 20,
+          mainAxisSpacing: 20,
+        ),
+        itemBuilder: (context, index) {
+          return Image.network(imageList[index]);
+        },
       ),
-      itemBuilder: (context, index) {
-        return Image.network(imageList[index]);
-      },
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'screen/grid_count.dart';
+import 'screen/home_screen.dart';
 
 var imageList = [
   'https://mir-s3-cdn-cf.behance.net/project_modules/hd/602f4731226337.5646928c3633f.jpg',
@@ -29,7 +29,8 @@ class MyApp extends StatelessWidget {
         ),
         // body: const SimpleGridViewExample(), //! Sade Grid View
         // body: const GridViewBuilderExample(), //! Builder ile Grid View
-        body: const GridViewCountExample(), //! Count ile Grid View
+        // body: const GridViewCountExample(), //! Count ile Grid View
+        body: const HomeScreen(),
       ),
     );
   }
