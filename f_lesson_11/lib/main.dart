@@ -93,8 +93,4 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-final List<Widget> sliders = imgList
-    .map((url) => Container(
-          child: Image.network(url),
-        ))
-    .toList();
+final List<Widget> sliders = imgList.map((url) => Image.network(url)).toList();
