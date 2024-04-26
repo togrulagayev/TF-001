@@ -63,7 +63,7 @@ class _MiniSliderWidgetState extends State<MiniSliderWidget> {
             autoPlay: false,
             disableCenter: true,
             enableInfiniteScroll: false,
-            padEnds: false,
+            // padEnds: false,
             onPageChanged: (index, reason) => setState(() {
               currentIndex = index;
             }),

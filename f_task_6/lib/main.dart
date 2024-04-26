@@ -1,4 +1,4 @@
-import 'package:f_task_6/screens/home_screen.dart';
+import 'package:f_task_6/screens/blog_screen.dart';
 import 'package:flutter/material.dart';
 
 // import 'screens/login_screen.dart';
@@ -15,12 +15,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(),
-        body: const HomeScreen(),
-      ),
+      home: BlogScreen(),
     );
   }
 }

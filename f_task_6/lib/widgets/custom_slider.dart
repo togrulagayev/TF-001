@@ -29,7 +29,7 @@ class _CustomSliderWidgetState extends State<CustomSliderWidget> {
               children: [
                 Container(
                   width: double.infinity,
-                  height: 600,
+                  height: MediaQuery.of(context).size.height * 0.7,
                   decoration: BoxDecoration(
                     image: DecorationImage(
                       image: NetworkImage(

@@ -17,4 +17,6 @@ const instaSliderImage = [
   "https://s3-alpha-sig.figma.com/img/2c5f/dc28/9ba5b3fbfaa659394c45d7ed84a383a4?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JB~TI70MoBQsZ0b8AWGCtHn0sTxPLp2pZPmbyBLfqNKiNyBuRfU9fXVyqwxECXJm--1GbDGEeVgEPaoRX1wAJ06WC4TAXtLzi8VgfiwBcnkGrtNgMnL7Qvu~gbIquvqhn5lKU~zjDEhsqlS-8BqCQUC1iBgY~aajV9QW60BK04JdmuAAZ-MiL67WLGyJXjToPmePRcn~y~YmIWR4qpPjum3ZlJskYRMuy9PLWkb4TpQ1oVgmrLUzZ2cekuZ9rDQi8LPISKN9BKnR0Irbq6xhTufgU0rkSIUwFR-PS27oS4B1Debv~SX~RGRWDIZ-H5BwQEwTWMcDN2PSacKiykM~5A__",
 ];
 
+const blogImage =
+    'https://s3-alpha-sig.figma.com/img/79f3/4295/41cfa178ce2f01797cfdb3c23c496c30?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RIoTiLPpR8ScJyNgr79dNZ35mAI0~kZEGYtJSmiJDG244X~zvdhQAxhwZNkh6j4rH6p6g7k3YVBvRnn2M884U9zwP973h0nZCjP74vx0yxTd3REGb7YOUbyqdo2RwkfPcFDwIxg3Ro43ZfHocBDlHwFhD2zSBexAjaUo-0LDAiaVo2bdyo6t3-I8iLc1-GHx4RF6BtjHH8MWNtF61ss9fjz94F36Tj-ogBCJDKtk67qThW0YKkJDTu7gtzHbHbObBAWa5elaMfZhcbu5iMovZDPxmFRAQLHW-b1xXE1SQYRsDT4cqxf3ZKNaPL3vcSKDJwZSxtiLw2XrNnR0oyJhZA__';
 const namesList = ['@ralph', '@kristin', '@albert'];
