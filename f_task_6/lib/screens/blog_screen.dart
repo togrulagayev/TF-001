@@ -2,10 +2,10 @@ import 'package:f_task_6/constants/network_images.dart';
 import 'package:f_task_6/constants/texts.dart';
 import 'package:f_task_6/widgets/about_us.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../functions/default_appbar.dart';
 import '../widgets/blog_image.dart';
 import '../widgets/blog_text.dart';
 
@@ -15,29 +15,7 @@ class BlogScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          icon: SvgPicture.asset(
-            'assets/svgs/menu-icon.svg',
-          ),
-          onPressed: () {},
-        ),
-        title: Text(
-          'StyleSage',
-          style: GoogleFonts.architectsDaughter().copyWith(fontSize: 35.0),
-        ),
-        centerTitle: true,
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: SvgPicture.asset('assets/svgs/search-icon.svg'),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: SvgPicture.asset('assets/svgs/shopping-bag.svg'),
-          )
-        ],
-      ),
+      appBar: defaultAppBar(),
       body: ListView(
         children: [
           Padding(
