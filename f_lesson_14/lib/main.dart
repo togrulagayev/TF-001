@@ -38,18 +38,24 @@ class _MyAppState extends State<MyApp> {
         body: ListView.builder(
           itemCount: users.length,
           itemBuilder: (BuildContext context, int index) {
-            return ListTile(
-              title: Text(users[index].userName),
-              subtitle: Text(users[index].email),
-              leading: CircleAvatar(
-                backgroundColor: Colors.deepPurple,
-                child: Text(users[index].id.toString()),
-              ),
-              trailing: ElevatedButton(
-                onPressed: () {},
-                child: Text(users[index].address.number.toString()),
-              ),
-            );
+            if (users.isEmpty || users.isEmpty) {
+              return const Center(
+                child: CircularProgressIndicator(),
+              );
+            } else {
+              return ListTile(
+                title: Text(users[index].userName),
+                subtitle: Text(users[index].email),
+                leading: CircleAvatar(
+                  backgroundColor: Colors.deepPurple,
+                  child: Text(users[index].id.toString()),
+                ),
+                trailing: ElevatedButton(
+                  onPressed: () {},
+                  child: Text(users[index].address.number.toString()),
+                ),
+              );
+            }
           },
         ),
       ),
