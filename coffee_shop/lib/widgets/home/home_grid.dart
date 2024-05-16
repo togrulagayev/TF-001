@@ -17,7 +17,7 @@ class HomeGridWidget extends StatelessWidget {
         child: GridView.builder(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
-            mainAxisExtent: 238,
+            mainAxisExtent: 250,
           ),
           itemCount: coffeesLinks.length,
           itemBuilder: (BuildContext context, int index) {
@@ -68,7 +68,8 @@ class HomeGridWidget extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      bottom: -8,
+                      bottom: -2,
+                      left: 8,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -80,9 +81,26 @@ class HomeGridWidget extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          IconButton(
-                            icon: const Icon(Icons.favorite_border),
-                            onPressed: () {},
+                          const SizedBox(width: 32),
+                          SizedBox(
+                            height: 32,
+                            width: 32,
+                            child: IconButton(
+                              style: ButtonStyle(
+                                backgroundColor: MaterialStateProperty.all(
+                                  const Color(0xffC67C4E),
+                                ),
+                                shape: MaterialStateProperty.all(
+                                  RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                ),
+                              ),
+                              icon: const Center(
+                                child: Icon(Icons.add),
+                              ),
+                              onPressed: () {},
+                            ),
                           ),
                         ],
                       ),

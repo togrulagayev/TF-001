@@ -1,4 +1,4 @@
-import 'package:f_task_6/screens/all_blogs_screen.dart';
+import 'package:f_task_6/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 // import 'screens/login_screen.dart';
@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AllBlogsScreen(),
+      home: HomeScreen(),
     );
   }
 }
