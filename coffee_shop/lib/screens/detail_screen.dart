@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/default_dvider.dart';
 import '../widgets/detail/coffee_size.dart';
 import '../widgets/detail/description.dart';
 import '../widgets/detail/detail_appbar.dart';
@@ -23,13 +24,7 @@ class DetailScreen extends StatelessWidget {
             SizedBox(height: 16),
             DetailProductWidget(),
             SizedBox(height: 16),
-            SizedBox(
-              width: 295,
-              child: Divider(
-                thickness: 1,
-                color: Color(0xffE3E3E3),
-              ),
-            ),
+            DefaultDviderWidget(),
             SizedBox(height: 16),
             Text(
               'Description',

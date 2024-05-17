@@ -1,4 +1,4 @@
-import 'package:coffee_shop/screens/detail_screen.dart';
+import 'package:coffee_shop/screens/order_screen.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
-      home: const DetailScreen(),
+      home: const OrderScreen(),
     );
   }
 }
